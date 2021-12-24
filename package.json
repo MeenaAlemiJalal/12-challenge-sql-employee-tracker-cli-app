@@ -1,0 +1,19 @@
+{
+  "name": "12-challenge-sql-employee-tracker",
+  "version": "1.0.0",
+  "description": "A node cli application using sql to manage employees",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -I server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0",
+    "mysql2": "^2.3.3"
+  }
+}
