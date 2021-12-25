@@ -1,7 +1,7 @@
 const inquirer = require('inquirer')
 require('console.table');
-const EmployeeManager = require('./EmployeeManager');
-const Questions = require('./questions')
+const EmployeeManager = require('./lib/EmployeeManager');
+const Questions = require('./lib/questions')
 
 const questions = {
   department: Questions.departmentRelatedQuestions,
@@ -45,7 +45,7 @@ const getAllEmployeeNames = (employees) => {
 }
 
 
-const getUserInputes = async (db) => {
+const runApp = async (db) => {
   let employees = await EmployeeManager.getEmployees(db)
   let roles = await EmployeeManager.getRoles(db)
   let employeeNames = getAllEmployeeNames(employees)
@@ -100,4 +100,4 @@ const getUserInputes = async (db) => {
   }
 }
 
-module.exports = getUserInputes
+module.exports = runApp
