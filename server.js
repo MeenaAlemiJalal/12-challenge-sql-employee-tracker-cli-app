@@ -1,10 +1,10 @@
 // Import and require mysql2
 const mysql = require('mysql2/promise');
 const figlet = require('figlet');
-const runAllQueries = require('./lib/userInputes');
+const getUserInputes = require('./lib/userInputes');
 
 console.log(  
-  figlet.textSync('Employee\n   Tracker', {
+  figlet.textSync('Employee\n   Manager', {
       horizontalLayout: 'full',
       whitespaceBreak: true
   })
@@ -20,13 +20,16 @@ const startServer = async () => {
         database: 'employee_tracker_db'
       },
     );
-    console.log(`Connected to the emplyee_tracker database.`)
-    await runAllQueries(db)
-    return console.log('Bye Bye')
+    console.log(`Connected to the employee_manager database.`)
+    await getUserInputes(db)
   } catch(err){
     console.log(err.message)
   } 
 }
-startServer()
+startServer().then(()=>{
+  return console.log('All done, changes saved successfully!\nPress Ctrl + c on your keyboard to exit!')
+}).catch(err=> {
+  console.log(err)
+})
 
 
