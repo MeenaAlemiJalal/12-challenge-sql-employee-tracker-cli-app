@@ -27,14 +27,14 @@ The database schema is designed as below and in general it contains three tables
 
 ## Getting Started
 Because this application is not deployed, you’ll need to run it through command line with the following steps:
-* Install all dependecies
+* Install all dependecies: 
 Make sure to run `npm install` from the root directory.
-* Create the database
+* Create the database: 
 Run mysql from a command line and create a new database called `employee_tracker_db`.
-* Run schema and seeds
+* Run schema and seeds: 
 If running this app for the first time it is neccessary to run the schema.sql and seeds.sql files first so you have at least some data.
 To run the schema and seeds files, run mysql from a terminal window and then run `source ./db/schema.sql` and then `source ./db/seeds.sql`.
-* Update server.js file with your db credentials
+* Update server.js file with your db credentials: 
 Inside server.js file update the createConnection functions with approperiate db creds
 ```
 const db = await mysql.createConnection(
@@ -46,7 +46,7 @@ const db = await mysql.createConnection(
   },
 );
 ```
-* Run the app
+* Run the app: 
 From a command line window run the application from the root folder by running `node server.js`
 
 ## Screenshots
