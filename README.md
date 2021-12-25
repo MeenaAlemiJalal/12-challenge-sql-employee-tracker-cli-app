@@ -50,11 +50,11 @@ const db = await mysql.createConnection(
 From a command line window run the application from the root folder by running `node server.js`
 
 ## Screenshots
-<img width="721" alt="emplyee-management-1" src="https://user-images.githubusercontent.com/91281668/147393840-1c84f3e7-b46a-4f19-b71f-6005449a8825.png">
+<img width="721" alt="emplyee-managment" src="https://user-images.githubusercontent.com/91281668/147393840-1c84f3e7-b46a-4f19-b71f-6005449a8825.png">
 
-<img width="736" alt="em" src="https://user-images.githubusercontent.com/91281668/147393842-c976cc00-22d9-44cb-bd6f-0252e8a5925e.png">
+<img width="721" alt="employee-managment" src="https://user-images.githubusercontent.com/91281668/147393842-c976cc00-22d9-44cb-bd6f-0252e8a5925e.png">
 
-<img width="721" alt="emplyee-management-3" src="https://user-images.githubusercontent.com/91281668/147393843-249018c8-9ca0-4eac-b2c5-998668712afb.png">
+<img width="721" alt="emplyee-managment" src="https://user-images.githubusercontent.com/91281668/147393843-249018c8-9ca0-4eac-b2c5-998668712afb.png">
 
 
 - - -
