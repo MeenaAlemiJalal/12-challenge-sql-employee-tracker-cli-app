@@ -36,14 +36,15 @@ If running this app for the first time it is neccessary to run the schema.sql an
 To run the schema and seeds files, run mysql from a terminal window and then run `source ./db/schema.sql` and then `source ./db/seeds.sql`.
 * Update server.js file with your db credentials
 Inside server.js file update the createConnection functions with approperiate db creds
-```const db = await mysql.createConnection(
-      {
-        host: 'localhost',
-        user: 'root', <this is the db user>
-        password: '12345', <your password here>
-        database: 'employee_tracker_db' <this is the db you created in step 2>
-      },
-    );
+```
+const db = await mysql.createConnection(
+  {
+    host: 'localhost',
+    user: 'root', <this is the db user>
+    password: '12345', <your password here>
+    database: 'employee_tracker_db' <this is the db you created in step 2>
+  },
+);
 ```
 * Run the app
 From a command line window run the application from the root folder by running `node server.js`
