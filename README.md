@@ -1,5 +1,6 @@
 # Employee Tracker App: Node, SQL
 Employee Management app manages a company's employee database, using Node.js, Inquirer, and MySQL via command line interface
+walkthrough video:https://watch.screencastify.com/v/Ep6eZRH9it3OLSs2q9h2
 
 ## Database Schema
 The database schema is designed as below and in general it contains three tables:
