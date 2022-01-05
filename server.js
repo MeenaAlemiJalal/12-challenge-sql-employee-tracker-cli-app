@@ -24,13 +24,14 @@ const startServer = async () => {
     // Run the app
     await runApp(db)
   } catch(err){
-    console.log(err.message)
+    console.log(err)
   } 
 }
 
 // start the server
 startServer().then(()=>{
-  return console.log('All done, changes saved successfully!\nPress Ctrl + c on your keyboard to exit!')
+  console.log('Bye!')
+  process.exit(0)
 }).catch(err=> {
   console.log(err)
 })

@@ -70,7 +70,7 @@ const runApp = async (db) => {
       case 'update employee role':
         const updatedEmployee = await runQuery('updateEmployeeRole', rolesNames, employeeNames)
         await EmployeeManager.updateEmployeeRole(db, updatedEmployee)
-        console.log(`Updated ${employee.name}'s role in the database`)
+        console.log(`Updated ${updatedEmployee.name}'s role in the database`)
         break;
       case 'view all roles':
         roles = await EmployeeManager.getRoles(db)
